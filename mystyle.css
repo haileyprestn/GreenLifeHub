@@ -1,0 +1,33 @@
+header{
+    display: flex; /* Uses flexbox layout for the header */
+    align-items: center; /* Centers the items in the header vertically */
+    padding: 20px; /* Adds padding inside the header */
+    box-shadow: 0 2px 4px lightgrey; /* Adds a light grey shadow to the header */
+    width: 100%; /* Ensures that the header takes up the full width of the page */
+}
+header h1{
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Sets the font family of the h1 element in the header */
+    font-size: 32pt; /* Sets the font size of the h1 element in the header to 32 points */
+    text-align: center; /* Centers the text within the h1 element in the header */
+    margin: 0 auto; /* Centers the h1 element within the header */
+}
+nav{
+    text-align: center; /* Centers the text within the navigation */
+}
+nav ul li{
+    display: inline; /* Displays the navigation bar items/choices inline horizontally */
+    margin: 0 20px; /* Adds a margin of 20 pixels on the left and right side of the navigation bar */
+    padding: 10px 20px; /* Adds padding inside the navigation bar */
+    font-size: 18pt; /* Sets the font size of the navigation bar text to 18 points */
+    background-color: seagreen; /* Sets the background color of the navigation bar choices to seagreen */
+}
+footer{
+    display: flex; /* Uses flexbox layout for the footer */
+    align-items: center; /* Centers the items vertically within the footer */
+    justify-content: center; /* Centers the items horizontally within the footer */
+    box-shadow: 0 2px 4px lightgrey; /* Adds a light grey shadow to the footer */
+    background-color: seagreen; /* Sets the background color of the footer to seagreen */
+    border: 2px solid black; /* Adds a 2-pixel solid black border to the footer */
+    margin-top: 30px; /* Adds a top margin of 30 pixels to the footer */
+    width: 100%; /* Ensures that the footer takes up the full width of the page */
+}

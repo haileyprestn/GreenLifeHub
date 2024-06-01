@@ -12,10 +12,42 @@
 </script>
     <meta charset="utf-8">
     <title>Green Life Hub</title>
+    <link rel="stylesheet" href="mystyle.css">
     <meta name="description" content="GreenLifeHub provides tools, tips, and community support to help you live a more sustainable life. Explore our living tips, subscribe to our newsletter, and discover eco-friendly products designed to help you make a positive impact.">
     <meta name="keywords" content="sustainability, eco-friendly, green living, sustainable tips, eco-friendly products">
     <meta name="author" content="Hailey Preston">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            display: flex; /* Uses flexbox layout for the body */
+            flex-direction: column; /* Arranges items in the body in a column */
+            align-items: center; /* Centers items in the body horizontally */
+            justify-content: space-between; /* Distributes space between items in the body */      
+        }
+        h2{
+            display: flex; /* Uses flexbox layout for the h2 elements */
+            align-items: center; /* Centers items vertically within the h2 elements */
+            justify-content: center; /* Centers items horizontally within the h2 elements */
+            background-color: seagreen; /* Sets the background color of the h2 elements to seagreen */
+            font-size: 35pt; /* Sets the font size of the h2 elements to 35 points */
+            border: 2px solid black; /* Adds a 2-pixel solid black border to the h2 elements */
+        }
+/* This is the CSS code for the newspaper subscription and contact us form.*/
+/* I learned how to make the boxes for both contact forms through W3schools, attached below is the exact link
+I used to learn how to do it: https://www.w3schools.com/howto/howto_css_contact_form.asp */
+        .first {
+            display: flex; /* Uses flexbox layout for the first form section for questions */
+            flex-direction: column; /* Arranges items in a column in the first form */
+            justify-content: center; /* Centers items horizontally in the first form */
+            margin-bottom: 20px; /* Adds a bottom margin of 20 pixels to the first form */
+        }
+        .second {
+            display: flex; /* Uses flexbox layout for the second form section for the newspaper subscription */
+            flex-direction: column; /* Arranges items in a column in the second form */
+            justify-content: center; /* Centers items horizontally in the second form */
+            margin-bottom: 20px; /* Adds a bottom margin of 20 pixels to the second form */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -31,21 +63,32 @@
             <li><a href="contactus.html">Contact Us</a></li>
         </ul>
     </nav>
-    <div class="heading">
         <h2> Questions, Comments, Concerns?</h2>
-        <ul>
-            <li>Name:</li>
-            <li>Email Address:</li>
-            <li>Subject:</li>
-            <li>Message:</li>
-        </ul>
+        <div class="first">
+            <label for="name">Name:</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name...">
+            <br>
+            <label for="email">Email Addres:</label>
+            <input type="text" id="email" name="email" placeholder="Your email...">
+            <br>
+            <label for="message">Message:</label>
+            <input type="text" id="message" name="message" placeholder="Write something...">
+            <br>
+            <input type="submit" value="Submit">
+        </div>
         <img src="ecobutterfly.webp" alt="globe" width="700">
         <h2> Subscribe to Our Newpaper!</h2>
-        <ul>
-            <li>Name:</li>
-            <li>Email Address:</li>
-            <li>Frequency:<br> <button type="button">Weekly</button><button type="button">Monthly</button></li>
-        </ul>
+        <div class="second">
+            <label for="name">Name:</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name...">
+            <br>
+            <label for="email">Email Addres:</label>
+            <input type="text" id="email" name="email" placeholder="Your email...">
+            <br>
+            <label for="frequency">Frequency:</label>
+            <button type="button">Weekly</button>
+            <button type="button">Monthly</button>
+            <button type="submit">Submit</button>
     </div>
     <footer>
         <h4> Follow us on
