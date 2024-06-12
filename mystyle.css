@@ -1,3 +1,6 @@
+body{
+    background-color: rgba(209, 223, 208, 0.836);
+}
 header{
     display: flex; /* Uses flexbox layout for the header */
     align-items: center; /* Centers the items in the header vertically */
@@ -19,15 +22,33 @@ nav ul li{
     margin: 0 20px; /* Adds a margin of 20 pixels on the left and right side of the navigation bar */
     padding: 10px 20px; /* Adds padding inside the navigation bar */
     font-size: 18pt; /* Sets the font size of the navigation bar text to 18 points */
-    background-color: seagreen; /* Sets the background color of the navigation bar choices to seagreen */
+    background-color: rgb(163, 192, 163); /* Sets the background color of the navigation bar choices to seagreen */
+    border: 2px solid black;
 }
+img {
+    border: 3px solid black;
+  }
 footer{
     display: flex; /* Uses flexbox layout for the footer */
     align-items: center; /* Centers the items vertically within the footer */
     justify-content: center; /* Centers the items horizontally within the footer */
     box-shadow: 0 2px 4px lightgrey; /* Adds a light grey shadow to the footer */
-    background-color: seagreen; /* Sets the background color of the footer to seagreen */
+    background-color: rgb(163, 192, 163); /* Sets the background color of the footer to seagreen */
     border: 2px solid black; /* Adds a 2-pixel solid black border to the footer */
     margin-top: 30px; /* Adds a top margin of 30 pixels to the footer */
     width: 100%; /* Ensures that the footer takes up the full width of the page */
+}
+button {
+    background-color: rgba(137, 196, 125, 0.855);
+    border: solid 2px black;
+    padding: 10px 10px;
+    border-radius: 3px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-size: 12pt;
+    text-align: center;
+}
+button:hover {
+    background-color:rgb(102, 190, 79);
 }

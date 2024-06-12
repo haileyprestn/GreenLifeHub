@@ -28,9 +28,9 @@
             display: flex; /* Uses flexbox layout for the h2 elements */
             align-items: center; /* Centers items vertically within the h2 elements */
             justify-content: center; /* Centers items horizontally within the h2 elements */
-            background-color: seagreen; /* Sets the background color of the h2 elements to seagreen */
+            background-color: #8aac7f; /* Sets the background color of the h2 elements to seagreen */
+            border: solid 2px black;
             font-size: 35pt; /* Sets the font size of the h2 elements to 35 points */
-            border: 2px solid black; /* Adds a 2-pixel solid black border to the h2 elements */
         }
 /* This is the CSS code for the newspaper subscription and contact us form.*/
 /* I learned how to make the boxes for both contact forms through W3schools, attached below is the exact link
@@ -63,34 +63,48 @@ I used to learn how to do it: https://www.w3schools.com/howto/howto_css_contact_
             <li><a href="contactus.html">Contact Us</a></li>
         </ul>
     </nav>
+    <div class="container">
+        <form id="registration-form" action="#" method="post">
+    </div>
         <h2> Questions, Comments, Concerns?</h2>
-        <div class="first">
-        <form action="action_page.html">
-            <label for="name">Name:</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name...">
-            <br>
-            <label for="email">Email Addres:</label>
-            <input type="text" id="email" name="email" placeholder="Your email...">
-            <br>
-            <label for="message">Message:</label>
-            <input type="text" id="message" name="message" placeholder="Write something...">
-            <br>
-            <input type="submit" value="Submit">
+    <div class="first">
+        <script src="script.js"></script>
+        <form id="registration-form" action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="name" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group"
+                <label for="message">Message:</label>
+                <input type="message" id="message" name="message" required>
+            </div>
+            <button type="submit">Submit</button>
         </form>
-        </div>
+    </div>
         <img src="ecobutterfly.webp" alt="globe" width="700">
-        <h2> Subscribe to Our Newpaper!</h2>
-        <div class="second">
-        <form action="action_page.html">
-            <label for="name">Name:</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name...">
-            <br>
-            <label for="email">Email Addres:</label>
-            <input type="text" id="email" name="email" placeholder="Your email...">
-            <br>
-            <label for="frequency">Frequency:</label>
-            <button type="button">Weekly</button>
-            <button type="button">Monthly</button>
+        <h2> Subscribe to Our Newspaper!</h2>
+    <div class="second">
+            <script src="script.js"></script>
+        <form id="registration-form" action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="fname" name="firstname" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="frequency">Choose a frequency:</label>
+                <select name="frequency" id="frequency" two>
+                    <option value="Weekly">Weekly</option>
+                    <option value="Monthly">Monthly</option>
+                </select>
+            </div>
             <button type="submit">Submit</button>
         </form>
     </div>
